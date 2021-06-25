@@ -83,8 +83,6 @@ main {
   scroll-snap-type: y mandatory;
 }
 main section {
-  min-height: 100vh;
-  scroll-snap-align: start;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -286,6 +284,7 @@ ul li i {
   font-weight: 700;
   margin-bottom: 24px;
   color: #676565;
+  padding-top: 38px;
 }
 .titulo-descricao {
   text-align: center;
@@ -568,6 +567,81 @@ html {
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
+  }
+}
+/*Responsividade Contact */
+@media (min-width: 100px) {
+  .contact {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0px;
+  }
+  .contact img{
+    width: 250px;
+    height: 200px;
+  }
+  .contact-right{
+    padding-bottom: 24px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+  .contact img{
+    width: 290px;
+    height: 200px;
+  }
+}
+
+@media (min-width: 900px){
+  .contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/*Responsividade Contact */
+@media (min-width: 100px) {
+  .footer-main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+}
+
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .footer-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+@media (min-width: 900px){
+  .footer-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+}
+
+/*Responsividade Contact */
+
+@media (min-width: 100px) {
+  .footer-dev {
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
 }
 
