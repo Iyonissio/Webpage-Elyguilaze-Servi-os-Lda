@@ -459,16 +459,48 @@ html {
 /*Responsividade Header*/
 
 @media (min-width: 100px) {
-  .banner .banner-text-block{
+  .banner-text-block{
     height: 185px;
     left: 2px;
-    padding: 24px 24px 24px 24px;
+    padding: 18px 18px 18px 18px;
   }
   .banner .banner-text-block h4{
     font-size: 22px;
   }
   .banner .banner-text-block p{
     font-size: 20px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .banner-text-block{
+    height: 285px;
+    left: 22px;
+    padding: 22px 22px 22px 22px;
+  }
+  .banner .banner-text-block h4{
+    font-size: 30px;
+  }
+  .banner .banner-text-block p{
+    font-size: 28px;
+  }
+}
+
+/*Responsividade Vendas textos somente*/
+@media (max-width: 500px) {
+  .titulo{
+    padding-top: 34px;
+    font-size: 26px;
+  }
+  .titulo-descricao{
+    font-size: 19px;
+  }
+}
+
+/*Responsividade Servicos textos somente*/
+@media (max-width: 500px) {
+  .titulo-descricao{
+    font-size: 19px;
   }
 }
 
