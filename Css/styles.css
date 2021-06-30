@@ -350,6 +350,7 @@ html {
   align-items: center;
   flex-direction: column;
   gap: 28px;
+  padding-bottom: 42px;
 }
 .servico-item {
   display: flex;
@@ -363,7 +364,7 @@ html {
   font-size: 1.5rem;
 }
 .servico-item-info li {
-  padding-bottom: 8px;
+  padding-bottom: 18px;
   font-size: 16px;
 }
 .servico-item img {
@@ -513,6 +514,10 @@ html {
   .servico-item img{
     width: 270px;
   }
+  .servico-item-info h4{
+    font-size: 18px;
+    align-items: center;
+  }
 }
 
 @media (min-width: 600px) and (max-width: 899px) {
@@ -525,6 +530,10 @@ html {
   .servico-item img{
     width: 270px;
   }
+  .servico-item-info h4{
+    font-size: 20px;
+    align-items: center;
+  }
 }
 
 @media (min-width: 900px){
@@ -532,6 +541,13 @@ html {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
+    align-items: center;
+  }
+  .servico-item img{
+    width: 350px;
+  }
+  .servico-item-info h4{
+    font-size: 22px;
     align-items: center;
   }
 }
@@ -546,6 +562,9 @@ html {
     width: 270px;
     height: 200px;
   }
+  .sobre-empresa-esquerda p{
+    line-height: 180%;
+  }
 }
 
 @media (min-width: 600px) and (max-width: 899px) {
@@ -554,10 +573,15 @@ html {
     grid-template-columns: repeat(1, 1fr);
     justify-content: center;
     align-items: center;
+    padding-bottom: 38px;
   }
   .sobre-empresa-direita img{
-    width: 290px;
+    padding-top: 30px;
+    width: 295px;
     height: 200px;
+  }
+  .sobre-empresa-esquerda p{
+    line-height: 180%;
   }
 }
 
@@ -567,6 +591,10 @@ html {
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
+  }
+  .sobre-empresa-direita img{
+    width: 530px;
+    height: 310px;
   }
 }
 /*Responsividade Contact */
@@ -640,9 +668,35 @@ html {
   .footer-dev {
     display: grid;
     justify-content: space-around;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 10px;
+  }
+  .footer-dev p{
+    font-size: 12px;
   }
 }
 
+@media (min-width: 600px) and (max-width: 899px){
+  .footer-dev {
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(3, 0.5fr);
+    gap: 8px;
+  }
+  .footer-dev p{
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 900px){
+  .footer-dev {
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .footer-dev p{
+    font-size: 24px;
+  }
+}
 
