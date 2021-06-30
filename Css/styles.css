@@ -474,8 +474,8 @@ html {
 
 @media (min-width: 600px) and (max-width: 899px) {
   .banner-text-block{
-    height: 285px;
-    left: 22px;
+    height: 220px;
+    left: 100px;
     padding: 22px 22px 22px 22px;
   }
   .banner .banner-text-block h4{
@@ -643,6 +643,9 @@ html {
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
   }
+  .footer-main p {
+    line-height: 30px;
+  }
 }
 
 
@@ -662,21 +665,36 @@ html {
   }
 }
 
-/*Responsividade Contact */
+/*Responsividade Laste Footer */
+
 
 @media (min-width: 100px) {
+  .footer {
+    padding-bottom: 55px;
+  }
   .footer-dev {
-    display: grid;
-    justify-content: space-around;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #262626;
+    padding-bottom: 50px;
   }
   .footer-dev p{
-    font-size: 12px;
+    font-size: 14px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .media i{
+    font-size: 16px;
   }
 }
 
+
+
 @media (min-width: 600px) and (max-width: 899px){
+  .footer {
+    padding-bottom: 15px;
+  }
   .footer-dev {
     display: grid;
     justify-content: space-around;
@@ -684,11 +702,14 @@ html {
     gap: 8px;
   }
   .footer-dev p{
-    font-size: 12px;
+    font-size: 15px;
   }
 }
 
 @media (min-width: 900px){
+  .footer {
+    padding-bottom: 15px;
+  }
   .footer-dev {
     display: grid;
     justify-content: space-around;
@@ -696,7 +717,7 @@ html {
     gap: 10px;
   }
   .footer-dev p{
-    font-size: 24px;
+    font-size: 15px;
   }
 }
 
