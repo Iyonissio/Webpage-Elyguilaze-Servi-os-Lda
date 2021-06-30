@@ -485,6 +485,19 @@ html {
     font-size: 28px;
   }
 }
+@media (min-width: 900px) {
+  .banner-text-block{
+    height: 220px;
+    left: 130px;
+    padding: 24px 24px 24px 24px;
+  }
+  .banner .banner-text-block h4{
+    font-size: 36px;
+  }
+  .banner .banner-text-block p{
+    font-size: 29px;
+  }
+}
 
 /*Responsividade Vendas textos somente*/
 @media (max-width: 500px) {
